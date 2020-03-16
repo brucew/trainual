@@ -1,0 +1,18 @@
+%table
+  %thead
+    %tr
+      %th Last Updated
+      %th Name
+      %th Email
+      %th Title
+      %th Phone
+      %th Status
+  %tbody
+    - @users.each do |user|
+      %tr
+        %td= user.updated_at
+        %td= user.name
+        %td= user.email
+        %td= user.title
+        %td= user.phone
+        %td= user.status
