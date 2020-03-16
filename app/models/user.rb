@@ -1,4 +1,8 @@
 class User < ApplicationRecord
-  validates :email, uniqueness: true
+  STATUSES = %w(active inactive)
+
+  validates :email, presence: true, uniqueness: true
+  validates :status, inclusion: {in: STATUSES}
+
 
 end
