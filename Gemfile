@@ -32,6 +32,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'faker' # A library for generating fake data such as names, addresses, and phone numbers
 gem 'haml' # Templating engine for HTML
 gem 'haml-rails', '~> 2.0' # Provides Haml generators for Rails 5+
+gem 'kaminari'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
