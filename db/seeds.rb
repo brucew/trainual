@@ -5,11 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-1000.times do
-  User.create(
+(1000 - User.count).times do
+  user = User.new(
     name: Faker::Name.name,
     email: Faker::Internet.email,
     title: Faker::Name.prefix,
     phone: Faker::PhoneNumber.phone_number
   )
+  user.save || puts(user.errors.messages)
 end
