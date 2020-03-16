@@ -29,6 +29,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.2', require: false
 
 # Application gems
+gem 'faker' # A library for generating fake data such as names, addresses, and phone numbers
 gem 'haml' # Templating engine for HTML
 gem 'haml-rails', '~> 2.0' # Provides Haml generators for Rails 5+
 
